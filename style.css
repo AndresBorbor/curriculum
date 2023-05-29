@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&display=swap');
+
 *{
     margin: 0;
     padding: 0 ;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -13,8 +15,10 @@
 
 #education{
     background-color: aqua ;
+    text-align: center;
 }
 
 #personal-information{
+    text-align: center;
     background-color: rgb(102, 241, 177);
 }
