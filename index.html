@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Document</title>
+    <title>Andrés Borbor</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta name="keywords" content="Curriculum, software developer"/>
+    <meta name="description" content="Curriculum vitae">
+    <meta name="author" content="Andres Borbor">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>Curriculum Vitae</h1>
-        <nav >
-            <ul class="menu">
-                <li><a href="#personal-information">Personal Information</a></li>
+        <nav>
+            <ul class="nav-bar">
+                <li><a href="#personal-information">About</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -21,63 +23,93 @@
         </nav>
     </header>
     <main>
-        <section id="personal-information">
-            <h2>Personal information</h2>
-            <div class="section-info">
-                <p>Name: Andrés Borbor</p>
-                <p>Email: adborbor@espol.edu.ec</p>
-                <p>Phone: +593 99 346 5579</p>
-            </div>
-            <img src="https://media.istockphoto.com/id/1142192548/es/vector/perfil-de-avatar-hombre-silueta-de-cara-masculina-o-icono-aislado-sobre-fondo-blanco.jpg?s=612x612&w=0&k=20&c=O6KtgzjlrIvoGi2Cb1ZyppWKlqGL_5IXVHLUdLN33Ag=" alt="self-image" width="200">
-        </section>
-        <section id="education">
-            <h2>Education</h2>
-            <div class="section-info">
-                <p>Escuela Superior Politécnica del Litoral</p>
-                <p>Computer Science</p>
-                <p>2021...</p>
-            </div>
-            <div class="iframe-wrapper">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127584.48529194968!2d-80.03460724179685!3d-2.1478802000000035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d72f925e5bfdb%3A0x327cdb9f7f4ba3b2!2sEscuela%20Superior%20Polit%C3%A9cnica%20del%20Litoral%20(ESPOL)!5e0!3m2!1ses!2sec!4v1684784292858!5m2!1ses!2sec" width = '100%'style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            
-        </section>
-        <section id="experience">
-            <h2>Work Experience</h2>
-            <div class="section-info">
-                <p><a href="https://creacionesgael.netlify.app" target="_blank">FreeLancer at Creaciones Gael </a></p>
-                <p>2023</p>
-                <p>Developed a web page for a catalogue of the products</p>
-            </div>
-            <div class="iframe-wrapper">
-                <iframe src="https://www.youtube.com/embed/PcEA2WdsSkI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-        </section>
-        <section id="skills">
-            <h2>Skills</h2>
-            <div class="section-info">
-                <p>Programming Languages: Java,Python, JavaScript</p>
-                <p>Operating Systems: Windows</p>
-                <p>Databass: MySQL</p>
-                <p>Technologies: ReactJS </p>
-            </div>
-        </section>
-        <section id="contact">
-            <h2>Contact me!</h2>
-            <form action="">
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" placeholder="name">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="email">
-                <label for="content">Contenido:</label>
-                <textarea name="content" id="content" cols="30" rows="10" ></textarea>
-            </form>
-        </section>
-        
+        <body>
+            <section id="personal-information" class="section">
+                <h2>Personal Information</h2>
+                <div class="section-info personal-info">
+                    
+                    <p><span>Name:</span>Andrés Borbor</p>
+                    <p><span>Email:</span>adborbor@espol.edu.ec</p>
+                    <p><span>Phone:</span>+593 099-346-5579</p>
+                </div>    
+                <div class="personal-img-wrapper">
+                    <img src="https://media.istockphoto.com/id/1142192548/es/vector/perfil-de-avatar-hombre-silueta-de-cara-masculina-o-icono-aislado-sobre-fondo-blanco.jpg?s=612x612&w=0&k=20&c=O6KtgzjlrIvoGi2Cb1ZyppWKlqGL_5IXVHLUdLN33Ag=" alt="self-image">
+                </div>
+                
+            </section>
+            <section id="education" class="section">
+                <h2>Education</h2>
+                <div class="section-info education-info">
+                    <ul class="education-list">
+                        <li>
+                            <p>Escuela Superior Politécnica del Litoral</p>
+                            <p>Computer Science</p>
+                            <p>2021-Present</p>
+                        </li>
+                        <li>
+                            <p>Salinas Innova School</p>
+                            <p>Science</p>
+                            <p>2014 - 2020</p>
+                        </li>
+                    </ul>
+                    
+                </div>
+                <div class="iframe-wrapper">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127584.48529194968!2d-80.03460724179685!3d-2.1478802000000035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d72f925e5bfdb%3A0x327cdb9f7f4ba3b2!2sEscuela%20Superior%20Polit%C3%A9cnica%20del%20Litoral%20(ESPOL)!5e0!3m2!1ses!2sec!4v1684784292858!5m2!1ses!2sec" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+            <section id="experience" class="section">
+                <h2>Experience</h2>
+                <div class="section-info experience-info">
+                    <ul class="experience-list">
+                        <li>
+                            <a href="https://academiaphi.netlify.app" target="_blank">Academia Phi Website 2023</a>
+                            <img src="" alt="">
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+                <div class="iframe-wrapper">
+                    <iframe src="https://www.youtube.com/embed/PcEA2WdsSkI" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                </div>
+            </section>
+            <section id="skills" class="section">
+                <h2>Skills</h2>
+                <div class="section-info skills">
+                    <ul class="skills-list">
+                        <li><h3>Programming Languages</h3>
+                            <ul class="languages">
+                                <li>JAVA</li>
+                                <li>PYTHON</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </li>
+                        <li><h3>Technologies</h3>
+                            <ul class="technologies">
+                                <li>ReactJS</li>
+                                <li>Django</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="contact" class="section contact">
+                <h2>Contact Me!</h2>
+                <form action="" class="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="name">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="email">
+                    <label for="content">Content:</label>
+                    <textarea name="content" id="content" cols="30" rows="10" ></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </body>
     </main>
     <footer>
         <p>Copyright &copy; 2023</p>
     </footer>
-    
 </body>
 </html>
