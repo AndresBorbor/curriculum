@@ -118,8 +118,23 @@ section>h2{
 .education-list>li{
     width: 100%;
     text-align: center;
+    
 }
 
+.experience-list{
+    list-style-type: none;
+   
+}
+
+.experience-list>li{
+    border: 1pt solid var(--lightblue);
+    border-radius: 5px;
+    padding: .5rem 1rem;
+}
+
+.experience-list>li>a{
+    color: var(--lightblue);
+}
 /* skills */
 
 .skills{
@@ -145,19 +160,20 @@ section>h2{
 }
 .technologies>li,
 .languages>li{
-    background-color: transparent;
-    border: 1pt solid var(--lightblue);
-    color: var(--lightblue);
+    background-color: var(--lightblue);
+    
+   
     width: max(5rem,20%);
     text-align: center;
     line-height: 2rem;
     border-radius: 5px;
+    transition: all .5s;
 }
 
 .technologies>li:hover,
 .languages>li:hover{
-    background-color: var(--lightblue);
-    color: var(--white);
+    border: 1pt solid var(--lightblue);
+    background: transparent;
     cursor:default;
 }
 /* section contact*/
