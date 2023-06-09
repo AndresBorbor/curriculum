@@ -220,6 +220,11 @@ section>h2{
     color: var(--black);
 }
 
+
+footer{
+    width: 100%;
+    text-align: center;
+}
 @media screen and (max-width: 576px) {
     section {
         gap: 2rem;
