@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    scroll-margin-top: 100px;
+}
+:root{
+    --black : #1a1919;
+    --white : #dbdbdb;
+    --lightblue: rgb(58, 156, 236);
+    --white-shadow: rgba(255, 255, 255, .5);
+}
+body{
+    background-color: var(--black);
+    color: var(--white);
+}
+header{
+    height: 100px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 5%;
+    align-items: center;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    background-color: var(--black);
+    letter-spacing: .2rem;
+    color: var(--lightblue);
+    z-index: 1000;
+}
+
+nav{
+    width: 50%;
+    
+}
+.menu{
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+   
+}
+h2{
+    color: var(--lightblue);
+    letter-spacing: .2rem;
+}
+i{
+    color: var(--lightblue);
+}
+a{
+    text-decoration: none;
+    color: var(--white);
+    
+}
+
+section{
+    padding: 0 5%;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 50vh;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+section>h2{
+    width: 100%;
+    text-align: center;
+}
+
+.section-info{
+    flex: 1 0 50%;
+    display: grid;
+    place-items: center;
+    gap: 2rem 0;
+}
+
+/* Section personal information */
+.personal-info{
+    height: 100%;
+    text-align: center;
+}
+
+
+.personal-img-wrapper, .iframe-wrapper{
+    flex: 1 0 50%;
+    display: grid;
+    place-items: center;
+}
+
+.personal-img-wrapper>img{
+    width: 50%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    mix-blend-mode:difference;
+}
+
+/*section education*/
+.iframe-wrapper>iframe{
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+}
+
+.education-list{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 3rem 0;
+    list-style-type: none;
+}
+
+.education-list>li{
+    width: 100%;
+    text-align: center;
+}
+
+/* skills */
+
+.skills{
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(49%,1fr));
+}
+.skills>div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem 0;
+}
+.technologies, .languages{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 150px;
+    width: 100%;
+    align-items: center;
+}
+.technologies>li,
+.languages>li{
+    background-color: transparent;
+    border: 1pt solid var(--lightblue);
+    color: var(--lightblue);
+    width: max(5rem,20%);
+    text-align: center;
+    line-height: 2rem;
+    border-radius: 5px;
+}
+
+.technologies>li:hover,
+.languages>li:hover{
+    background-color: var(--lightblue);
+    color: var(--white);
+    cursor:default;
+}
+/* section contact*/
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.contact-form>input, 
+.contact-form>textarea,
+.contact-form>label{
+    width: 50%;
+    margin: .5rem 0;
+    border-radius: 5px;
+    padding: 3px;
+    resize: none;
+    line-height: 1.5rem;
+    letter-spacing: 0.1rem;
+    background-color: transparent;
+    color: var(--white);
+    
+}
+
+.contact-form>input,
+.contact-form>textarea{
+    border: 1pt solid var(--lightblue)
+}
+.contact-form>button{
+    min-width: 15%;
+    line-height: 1.5rem;
+    border-radius: 5px;
+    background-color: transparent;
+    color: var(--white);
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+    border: 1pt solid var(--lightblue);
+}
+
+.contact-form>button:hover{
+    background-color: var(--white);
+    color: var(--black);
+}
+
+@media screen and (max-width: 576px) {
+    section {
+        gap: 2rem;
+    }
+    h1{
+        width: 100%;
+        text-align: center;
+    }
+    nav{
+        width: 100%;
+    }
+    .technologies>li,.languages>li{
+        width: 90%;
+    }
+    .contact-form>input, 
+    .contact-form>textarea,
+    .contact-form>label{
+        width: 100%;
+    }
+}
